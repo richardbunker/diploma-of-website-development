@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  line-height: 30px;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  background-image: url("/images/beach.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+header {
+  display: none;
+  position: absolute;
+  height: 50px;
+  top: 0px;
+  right: 0px;
+}
+
+footer {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+}
+
+.bottom-nav {
+  width: 100%;
+  text-align: center;
+}
+
+.top-nav {
+  text-align: right;
+  padding-top: 1rem;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  padding: 0.5rem 0.5rem;
+  margin: 0.5rem 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.home-container {
+  position: relative;
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 10rem 0.5rem;
+}
+
+.home-title {
+  font-size: 3rem;
+}
+.home-tagline {
+  font-size: 1.2rem;
+  padding: 0rem 1rem;
+  max-width: 500px;
+}
+
+.home-search {
+  border: grey 1px solid;
+  border-radius: 999px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 0rem 0.5rem;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-search-icon {
+  margin-left: 0.5rem;
+}
+
+.home-search-input {
+  width: 100%;
+  border: none;
+  border-radius: 999px;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.home-search-input:focus {
+  outline: none;
+}
+
+/* Breakpoints */
+
+@media (min-width: 768px) {
+  .home-title {
+    font-size: 5rem;
+  }
+  .home-tagline {
+    font-size: 1.5rem;
+    max-width: 100%;
+  }
+  .home-search {
+    margin-top: 2rem;
+    max-width: 500px;
+  }
+  .home-search-input {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 80% !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header {
+    display: block !important;
+  }
+  footer {
+    display: none !important;
+  }
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+.h-6 {
+  width: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-grey {
+  color: grey;
+}
