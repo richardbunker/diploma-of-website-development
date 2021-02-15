@@ -147,20 +147,117 @@ nav {
   height: 60px;
   position: fixed;
   margin-top: 140px;
-  background-color: #ff0000;
+  background-color: transparent;
   z-index: 997;
 }
 
 nav ul {
   width: 100%;
   height: auto;
-  background-color: #fff;
+  background-color: #ff0000;
 }
 nav ul li {
   width: 150px;
   height: 30px;
   display: inline-block;
   background-color: #ff0000;
+  border: solid 1px #000;
   margin-right: 10px;
   padding-top: 20px;
+}
+nav ul li a {
+  color: #fff;
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  line-height: 10px;
+}
+
+nav ul li:hover {
+  background-color: #d10407;
+  border: none;
+}
+
+nav ul li a:hover {
+  color: #ccc;
+}
+
+section.icon-holder {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border: solid 1px #ccc;
+}
+article.icon-info {
+  width: 30%;
+  height: 300px;
+  display: inline-block;
+  margin-right: 10px;
+  list-style: none;
+  text-align: center;
+  padding-top: 0px;
+  background-color: transparent;
+  border: solid 1px #ccc;
+  font-family: Arial, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+#icon1 {
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("images/icon1.png");
+  background-repeat: no-repeat;
+  background-position: 40% top;
+}
+#icon2 {
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("images/icon2.png");
+  background-repeat: no-repeat;
+  background-position: 40% top;
+}
+#icon3 {
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("images/icon3.png");
+  background-repeat: no-repeat;
+  background-position: 40% top;
+}
+
+.icon-info h4 {
+  background-color: transparent;
+  color: #302f2f;
+  font-family: Arial, Arial, Helvetica, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  z-index: 13;
+}
+.icon-info h6 {
+  background-color: transparent;
+  color: #302f2f;
+  font-family: Arial, Arial, Helvetica, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  z-index: 13;
+}
+
+.icon-info h4,
+.icon-info h6 {
+  background-color: transparent;
+  color: #302f2f;
+  font-family: Arial, Arial, Helvetica, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  z-index: 13;
 }
