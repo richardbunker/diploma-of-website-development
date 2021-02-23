@@ -13,23 +13,16 @@
       rel="stylesheet"
     />
   </head>
-  <body style="background-color: lightblue">
+  <body class="background-image-app" style="background-color: #77deff">
     <div class="container">
-      <header>
-        <nav class="top-nav">
-          <a href="/reviews.html" class="nav-link">Reviews</a>
-          <a href="/" class="nav-link">Feedback</a>
-          <a href="/" class="nav-link">Contact</a>
-        </nav>
-      </header>
-      <main class="review-container text-center">
-        <section class="px-2 w-full">
-          <a class="undecorate" href="/">
-            <h1 class="home-title">Summer Escapes</h1>
-          </a>
-          <div class="home-search">
+      <header class="app-header">
+        <a class="undecorate" href="/">
+          <h1 class="se-logo-small">Summer&nbsp;Escapes</h1>
+        </a>
+        <div class="desktop desktop-search">
+          <div class="se-search">
             <svg
-              class="search-icon home-search-icon"
+              class="search-icon se-search-icon"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -43,7 +36,70 @@
               ></path>
             </svg>
             <input
-              class="home-search-input"
+              class="se-search-input"
+              type="text"
+              name="search"
+              id="searchBar"
+              placeholder="Search escapes by region or postcode"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+        <nav class="app-top-nav">
+          <a href="/" class="app-nav-link">Home</a>
+          <a href="/reviews.html" class="app-nav-link link-active">Reviews</a>
+          <a href="/" class="app-nav-link">Feedback</a>
+          <a href="/" class="app-nav-link">Contact</a>
+        </nav>
+      </header>
+      <div class="tablet tablet-search">
+        <div class="se-search">
+          <svg
+            class="search-icon se-search-icon"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            ></path>
+          </svg>
+          <input
+            class="se-search-input"
+            type="text"
+            name="search"
+            id="searchBar"
+            placeholder="Search escapes by region or postcode"
+            autocomplete="off"
+          />
+        </div>
+      </div>
+      <main class="review-container text-center">
+        <section class="px-2 w-full mobile">
+          <a class="undecorate" href="/">
+            <h1 class="se-logo">Summer Escapes</h1>
+          </a>
+          <div class="se-search">
+            <svg
+              class="search-icon se-search-icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              ></path>
+            </svg>
+            <input
+              class="se-search-input"
               type="text"
               name="search"
               id="searchBar"
@@ -52,88 +108,263 @@
             />
           </div>
         </section>
-        <div class="w-full px-2" style="padding-bottom: 50px">
+        <div class="review-sub-container">
           <h4 class="review-title">Recent Reviews</h4>
-          <article class="review-component">
-            <img
-              src="/images/reviews/1.jpg"
-              alt="Image of review"
-              class="review-component-image"
-            />
-            <article class="review-component-footer">
-              <div class="review-component-avatar"></div>
-              <div class="px-2 review-component-heading">
-                <span class="review-component-heading-title">Beach Vibes</span>
-                <span class="review-component-heading-name"
-                  >Martin Goldsmith</span
-                >
-              </div>
+          <div class="review-block">
+            <section class="review-grid">
+              <article class="review-component">
+                <img
+                  src="/images/reviews/1.jpg"
+                  alt="Image of review"
+                  class="review-component-image"
+                />
+                <article class="review-component-footer">
+                  <div class="review-component-avatar">
+                    <svg
+                      class="review-component-avatar-icon"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="px-2 review-component-heading">
+                    <span class="review-component-heading-title"
+                      >Beach Vibes</span
+                    >
+                    <span class="review-component-heading-name"
+                      >Martin Goldsmith</span
+                    >
+                  </div>
+                </article>
+              </article>
+              <article class="review-component">
+                <img
+                  src="/images/reviews/2.jpg"
+                  alt="Image of review"
+                  class="review-component-image"
+                />
+                <article class="review-component-footer">
+                  <div class="review-component-avatar">
+                    <svg
+                      class="review-component-avatar-icon"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="px-2 review-component-heading">
+                    <span class="review-component-heading-title"
+                      >Sneaky Little Van</span
+                    >
+                    <span class="review-component-heading-name"
+                      >Harriet Belgarden</span
+                    >
+                  </div>
+                </article>
+              </article>
+              <article class="review-component">
+                <img
+                  src="/images/reviews/3.jpg"
+                  alt="Image of review"
+                  class="review-component-image"
+                />
+                <article class="review-component-footer">
+                  <div class="review-component-avatar">
+                    <svg
+                      class="review-component-avatar-icon"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="px-2 review-component-heading">
+                    <span class="review-component-heading-title"
+                      >Coastal Road Getaway</span
+                    >
+                    <span class="review-component-heading-name"
+                      >Brian Sheilds</span
+                    >
+                  </div>
+                </article>
+              </article>
+              <article class="review-component">
+                <img
+                  src="/images/reviews/4.jpg"
+                  alt="Image of review"
+                  class="review-component-image"
+                />
+                <article class="review-component-footer">
+                  <div class="review-component-avatar">
+                    <svg
+                      class="review-component-avatar-icon"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="px-2 review-component-heading">
+                    <span class="review-component-heading-title"
+                      >Relaxation +++++</span
+                    >
+                    <span class="review-component-heading-name"
+                      >Max Johnstone</span
+                    >
+                  </div>
+                </article>
+              </article>
+              <article class="review-component">
+                <img
+                  src="/images/reviews/5.jpg"
+                  alt="Image of review"
+                  class="review-component-image"
+                />
+                <article class="review-component-footer">
+                  <div class="review-component-avatar">
+                    <svg
+                      class="review-component-avatar-icon"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="px-2 review-component-heading">
+                    <span class="review-component-heading-title"
+                      >Breathtaking</span
+                    >
+                    <span class="review-component-heading-name"
+                      >Simone Sumner</span
+                    >
+                  </div>
+                </article>
+              </article>
+              <article class="review-component">
+                <img
+                  src="/images/reviews/6.jpg"
+                  alt="Image of review"
+                  class="review-component-image"
+                />
+                <article class="review-component-footer">
+                  <div class="review-component-avatar">
+                    <svg
+                      class="review-component-avatar-icon"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="px-2 review-component-heading">
+                    <span class="review-component-heading-title"
+                      >Secret Getaway</span
+                    >
+                    <span class="review-component-heading-name"
+                      >Richard Raymond</span
+                    >
+                  </div>
+                </article>
+              </article>
+              <article class="review-component">
+                <img
+                  src="/images/reviews/7.jpg"
+                  alt="Image of review"
+                  class="review-component-image"
+                />
+                <article class="review-component-footer">
+                  <div class="review-component-avatar">
+                    <svg
+                      class="review-component-avatar-icon"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="px-2 review-component-heading">
+                    <span class="review-component-heading-title"
+                      >Best. Spot. Ever!</span
+                    >
+                    <span class="review-component-heading-name"
+                      >Courtney Walker</span
+                    >
+                  </div>
+                </article>
+              </article>
+              <article class="review-component">
+                <img
+                  src="/images/reviews/8.jpg"
+                  alt="Image of review"
+                  class="review-component-image"
+                />
+                <article class="review-component-footer">
+                  <div class="review-component-avatar">
+                    <svg
+                      class="review-component-avatar-icon"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="px-2 review-component-heading">
+                    <span class="review-component-heading-title"
+                      >Did someone say camping?</span
+                    >
+                    <span class="review-component-heading-name"
+                      >Becky Lake</span
+                    >
+                  </div>
+                </article>
+              </article>
+            </section>
+            <article class="ads-container">
+              <aside>Sidebar for ads</aside>
             </article>
-          </article>
-          <article class="review-component">
-            <img
-              src="/images/reviews/2.jpg"
-              alt="Image of review"
-              class="review-component-image"
-            />
-            <article class="review-component-footer">
-              <div class="review-component-avatar"></div>
-              <div class="px-2 review-component-heading">
-                <span class="review-component-heading-title"
-                  >Sneaky Little Van</span
-                >
-                <span class="review-component-heading-name"
-                  >Harriet Belgarden</span
-                >
-              </div>
-            </article>
-          </article>
-          <article class="review-component">
-            <img
-              src="/images/reviews/3.jpg"
-              alt="Image of review"
-              class="review-component-image"
-            />
-            <article class="review-component-footer">
-              <div class="review-component-avatar"></div>
-              <div class="px-2 review-component-heading">
-                <span class="review-component-heading-title"
-                  >Coastal Road Getaway</span
-                >
-                <span class="review-component-heading-name">Brian Sheilds</span>
-              </div>
-            </article>
-          </article>
-          <article class="review-component">
-            <img
-              src="/images/reviews/4.jpg"
-              alt="Image of review"
-              class="review-component-image"
-            />
-            <article class="review-component-footer">
-              <div class="review-component-avatar"></div>
-              <div class="px-2 review-component-heading">
-                <span class="review-component-heading-title"
-                  >Relaxation +++++</span
-                >
-                <span class="review-component-heading-name">Max Johnstone</span>
-              </div>
-            </article>
-          </article>
-          <article class="review-component">
-            <img
-              src="/images/reviews/5.jpg"
-              alt="Image of review"
-              class="review-component-image"
-            />
-            <article class="review-component-footer">
-              <div class="review-component-avatar"></div>
-              <div class="px-2 review-component-heading">
-                <span class="review-component-heading-title">Breathtaking</span>
-                <span class="review-component-heading-name">Simone Sumner</span>
-              </div>
-            </article>
-          </article>
+          </div>
         </div>
       </main>
       <footer class="">
