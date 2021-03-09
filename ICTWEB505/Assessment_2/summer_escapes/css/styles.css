@@ -142,6 +142,18 @@ footer {
   z-index: 10;
 }
 
+.company-info {
+  color: #cecece;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: normal;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .review-container {
   position: relative;
   height: calc(100vh - 50px);
@@ -303,7 +315,7 @@ footer {
     font-size: 1rem;
   }
   .desktop-search {
-    margin: 0rem 1rem;
+    margin: 1rem;
   }
   .app-top-nav {
     width: 50%;
@@ -338,12 +350,19 @@ footer {
   padding: 0 1rem;
 }
 
+.py-1 {
+  padding: 0.5rem 0;
+}
 .w-full {
   width: 100%;
 }
 
 .undecorate {
   text-decoration: none;
+}
+
+.flex {
+  display: flex;
 }
 
 /* Review Styles */
