@@ -11,11 +11,23 @@ body {
   font-size: 12px;
   line-height: 12px;
   font-weight: 400;
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: "Open Sans", Verdana, Geneva, sans-serif;
   background-color: #fff;
   color: #333; /* equal to Grey */
   text-align: center; /* Used by older IE browsers to center page */
 }
+
+.skipNav {
+  position: absolute;
+  top: auto;
+  left: auto;
+  opacity: 0;
+}
+
+.skipNav:focus {
+  opacity: 1;
+}
+
 /* These are the styles for text */
 h1,
 h2,
@@ -78,12 +90,12 @@ article {
   margin-right: auto;
   z-index: 12;
 }
-.bigBox h2 {
+.bigBox h1 {
   width: auto;
   height: 100px;
   background-color: transparent;
   color: #fff;
-  font-family: arial "Gill Sans", "Gill Sans MT", "Myriad Pro",
+  font-family: arial, "Gill Sans", "Gill Sans MT", "Myriad Pro",
     "DejaVu Sans Condensed", Helvetica, Arial, sansserif;
   margin-left: auto;
   margin-right: auto;
@@ -115,7 +127,7 @@ footer {
 footer a {
   width: auto;
   height: 50px;
-  font-family: arial "Gill Sans", "Gill SansMT", "Myriad Pro",
+  font-family: arial, "Gill Sans", "Gill SansMT", "Myriad Pro",
     "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   margin-right: 5px;
@@ -232,7 +244,7 @@ article.icon-info {
   background-position: 40% top;
 }
 
-.icon-info h4 {
+.icon-info h2 {
   background-color: transparent;
   color: #302f2f;
   font-family: Arial, Arial, Helvetica, sans-serif;
@@ -241,7 +253,7 @@ article.icon-info {
   margin-top: 10px;
   z-index: 13;
 }
-.icon-info h6 {
+.icon-info h2 {
   background-color: transparent;
   color: #302f2f;
   font-family: Arial, Arial, Helvetica, sans-serif;
@@ -251,8 +263,8 @@ article.icon-info {
   z-index: 13;
 }
 
-.icon-info h4,
-.icon-info h6 {
+.icon-info h3,
+.icon-info h3 {
   background-color: transparent;
   color: #302f2f;
   font-family: Arial, Arial, Helvetica, sans-serif;
